@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Fax";
+  scroll-behavior: smooth;
+  border: 0.5px dotted green;
+  color: rgb(0, 0, 0);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+  hyphens: auto;
+  font-family: "Poppins", serif;
+  line-height: 1.5;
+}
+
+/* Sidebar */
+#sidebar-container {
+  width: 18svw;
+  /* min-width: 20rem; */
+  height: 100%;
+  background: #261e30;
+}
+
+#sidebar-container * {
+  color: #ffffff;
+}
+
+/* Sidebar collapse button */
+#toggle {
+  padding: 1rem;
+}
+
+#toggle a {
+  margin: 0 0 0 88%;
+  font-size: 3rem;
+}
+
+/* Sidebar header */
+.title {
+  margin: 1rem 1rem 2rem 1rem;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  background: rgba(64, 58, 97, 0.44);
+  text-align: center;
+  font-size: 3.3rem;
+}
+
+/* Sidebar Links */
+#sidebar nav {
+  padding: 2rem 0 2rem 2rem;
+}
+
+#sidebar nav ul {
+  padding: 2rem 0 2rem 2rem;
+}
+
+#sidebar nav ul li {
+  padding: 2rem 0 2rem 2rem;
+}
+
+#sidebar nav ul li a {
+  margin: 1rem auto 1rem 0;
+  text-align: start;
+  font-size: 2rem;
+  transition: all 333ms ease;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#sidebar nav ul li:hover a {
+  color: #fdec00;
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin: 1rem auto 1rem 20%;
+}
+
+#sidebar nav ul li:hover {
+  background: #333;
+  color: #fd7a00;
+  font-size: 2.3rem;
+}
+
+/* Close sidebar */
+.close-nav {
+  max-width: 5svw;
+}
+
+/* Open sidebar */
+.open-nav {
+  min-width: 18svw;
+}

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Fax";
+  scroll-behavior: smooth;
+  /* border: 0.5px dotted green; */
+  /* color: azure; */
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  min-height: 100svh;
+}
+
+#sidebar {
+  flex: 0 0 18svw;
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  min-height: 100svh;
+  justify-content: space-between;
+}
+
+#sidebar > h3 {
+  margin: 1rem 1rem 0 1rem;
+  background: #181616;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  text-align: center;
+}
+
+.world {
+  color: #58dada;
+}
+
+.sidebar-link {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}
+
+.sidebar-link > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0.5rem;
+  padding: 1rem;
+  min-width: 70%;
+  border-radius: 3rem;
+  list-style: none;
+  transition: all 222ms ease-in-out;
+}
+
+.sidebar-link > a:hover {
+  background: #183117;
+  color: #d1da58;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+#log-out {
+  margin: 1rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+#log-out > a {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 3rem;
+  background: #ad3636;
+  transition: all 222ms ease-in-out;
+}
+
+#log-out > a:hover {
+  text-decoration: none;
+  list-style: none;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  border-radius: 3rem;
+  background: #fc0000;
+}
+
+#dashboard {
+  flex: 0 0 82svw;
+  background: #e6e4ec;
+  /* min-height: 90svh; */
+}
+
+#dashboard > h1 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  max-width: 70%;
+  /* min-height: 100%; */
+  background: #313030;
+  margin: 1rem auto;
+  flex-direction: column;
+}
+
+.box-container {
+  display: flex;
+  min-height: 100%;
+  width: 100%;
+}
+
+.box {
+  min-height: 100%;
+  /* min-width: 5svw; */
+  background: #dae6d9;
+  color: #000000;
+  gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.first-two-box {
+  display: flex;
+}
+
+.third-box {
+  display: flex;
+}
+
+.last-two-box {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    max-width: 40%;
+  }
+
+  .box.first,
+  .box.second {
+    max-width: 50%;
+  }
+
+  .box-container {
+    width: 100%;
+  }
+}
