@@ -76,3 +76,28 @@ img {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: minmax(0, 1fr);
 }
+
+.card {
+  display: block;
+  padding: 1.5rem;
+  border: 0.1rem solid #ddd;
+  box-shadow: -1px 1.5px 5px #171c1f;
+  margin: 1rem;
+}
+.card .card-title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  font-weight: 800;
+}
+.card .card-body {
+  font-size: 1.6rem;
+}
+.card .card-body a {
+  text-decoration: underline;
+  color: #ff6600;
+  transition: all 0.1s ease;
+}
+.card .card-body a:hover {
+  font-weight: 600;
+  color: #ff9046;
+}

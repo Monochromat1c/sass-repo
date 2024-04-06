@@ -1,0 +1,28 @@
+.card {
+  display: block;
+  padding: $base-padding;
+  border: $base-border-thickness solid #ddd;
+  box-shadow: $base-box-shadow;
+  margin: 1rem;
+
+  .card-title {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 800;
+  }
+
+  .card-body {
+    font-size: $base-font-size;
+
+    a {
+      text-decoration: underline;
+      color: #ff6600;
+      transition: all .1s ease;
+    }
+
+    a:hover {
+      font-weight: 600;
+      color: #ff9046;
+    }
+  }
+}
