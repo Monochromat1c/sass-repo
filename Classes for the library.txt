@@ -22,3 +22,4 @@
 .btn
 .btn-{primary, secondary, error, info, blue, red, yellow, green, orange, purple, gray, black, white}
 .btn-outline-{primary, secondary, error, info, blue, red, yellow, green, orange, purple, gray, black, white}
+.btn-complement-{primary, secondary, error, info, blue, red, yellow, green, orange, purple, gray, black, white}
