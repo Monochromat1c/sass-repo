@@ -1,14 +1,16 @@
 const { src, dest, watch, series } = require('gulp')
 const sass = require('gulp-sass')(require('sass'));
+const purgecss = require('gulp-purgecss');
 
 function buildStyles() {
-    return src('Library-of-Alexandria/**/*.scss')
+    return src('Alexandria/**/*.scss')
         .pipe(sass())
+        .pipe(purgecss({ content: ['*.html'] }))
         .pipe(dest('assets/css'))
 }
 
 function watchTask() {
-    watch(['Library-of-Alexandria/**/*.scss'], buildStyles);
+    watch(['Alexandria/**/*.scss', '*.html'], buildStyles);
 }
 
 exports.default = series(buildStyles, watchTask)

@@ -1,0 +1,3 @@
+RUN THIS COMMAND TO THE TERMINAL
+Add npx before running gulp in the terminal, this ensures that Visual Studio Code uses the locally installed Gulp binary from the node_modules/.bin directory within the project:
+npx gulp
