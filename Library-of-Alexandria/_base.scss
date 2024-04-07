@@ -38,17 +38,17 @@ hr {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5.6dvw, 3.2rem) !important;
+    font-size: clamp(2.5rem, 5.6dvw, 3.2rem);
     font-weight: 900;
 }
 
 h2 {
-    font-size: clamp(1.8rem, 4dvw, 2.4rem) !important;
+    font-size: clamp(1.8rem, 4dvw, 2.4rem);
     font-weight: 800;
 }
 
 h3 {
-    font-size: clamp(1.6rem, 3.5dvw, 1.872rem) !important;
+    font-size: clamp(1.6rem, 3.5dvw, 1.872rem);
     font-weight: 700;
 }
 
@@ -68,7 +68,7 @@ h6 {
 }
 
 body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-    font-size: clamp(1.4rem, 3vw, 1.6rem) !important;
+    font-size: clamp(1.4rem, 3vw, 1.6rem);
 }
 
 img {

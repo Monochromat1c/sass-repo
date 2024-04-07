@@ -1,0 +1,178 @@
+@use 'sass:math';
+@import 'variables';
+
+$utilities: (
+    "padding": (
+        "prefix": "padding",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-left": (
+        "prefix": "padding-left",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-right": (
+        "prefix": "padding-right",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-top": (
+        "prefix": "padding-top",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "padding-bottom": (
+        "prefix": "padding-bottom",
+        "values": (
+            "0": 0,
+            "1": $base-padding,
+            "2": $base-padding * 2,
+            "3": $base-padding * 4,
+            "4": $base-padding * 6,
+            "5": $base-padding * 8
+        ),
+    ),
+    "margin": (
+        "prefix": "margin",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-left": (
+        "prefix": "margin-left",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-right": (
+        "prefix": "margin-right",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-top": (
+        "prefix": "margin-top",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "margin-bottom": (
+        "prefix": "margin-bottom",
+        "values": (
+            "0": 0,
+            "1": $base-margin,
+            "2": $base-margin * 2,
+            "3": $base-margin * 4,
+            "4": $base-margin * 6,
+            "5": $base-margin * 8
+        ),
+    ),
+    "opacity": (
+        "prefix": "opacity",
+        "values": (
+            "10": 0.1,
+            "20": 0.2,
+            "30": 0.3,
+            "40": 0.4,
+            "50": 0.5,
+            "60": 0.6,
+            "70": 0.7,
+            "80": 0.8,
+            "90": 0.9,
+            "100": 0.10,
+        ),
+    ),
+    "border-radius": (
+        "prefix": "border-radius",
+        "values": (
+            "default": $base-border-radius,
+            "none": 0,
+            "extra-small": math.div($base-border-radius, 4),
+            "small": math.div($base-border-radius, 2),
+            "large": $base-border-radius * 2,
+            "full": 50%,
+        )
+    ),
+    "display": (
+        "prefix": "display",
+        "values": (
+            "none": none,
+            "block": block,
+            "flex": flex,
+            "inline": inline,
+            "inline-block": inline-block,
+        )
+    ),
+    "font-size": (
+        "prefix": "font-size",
+        "values": (
+            "small": $font-size-small,
+            "large": $font-size-large,
+            "extra-large": $font-size-extra-large,
+            "extra-extra-large": $font-size-extra-extra-large
+        )
+    )
+);
+
+// Generate utility class
+@each $property, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $k, $v in $values {
+        @if($k == "default"){
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k}{
+                #{$property}: $v;
+            }
+        }
+    }
+}
