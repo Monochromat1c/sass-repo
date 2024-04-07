@@ -124,7 +124,7 @@ $utilities: (
             "70": 0.7,
             "80": 0.8,
             "90": 0.9,
-            "100": 0.10,
+            "100": 0.10
         ),
     ),
     "border-radius": (
@@ -135,8 +135,8 @@ $utilities: (
             "extra-small": math.div($base-border-radius, 4),
             "small": math.div($base-border-radius, 2),
             "large": $base-border-radius * 2,
-            "full": 50%,
-        )
+            "full": 50%
+        ),
     ),
     "display": (
         "prefix": "display",
@@ -145,7 +145,7 @@ $utilities: (
             "block": block,
             "flex": flex,
             "inline": inline,
-            "inline-block": inline-block,
+            "inline-block": inline-block
         )
     ),
     "font-size": (
@@ -156,6 +156,17 @@ $utilities: (
             "extra-large": $font-size-extra-large,
             "extra-extra-large": $font-size-extra-extra-large
         )
+    ),
+    "text-align": (
+        "prefix": "text-align",
+        "values": (
+            "center": center,
+            "end": end,
+            "justify": justify,
+            "left": left,
+            "right": right,
+            "start": start
+        ),
     )
 );
 
