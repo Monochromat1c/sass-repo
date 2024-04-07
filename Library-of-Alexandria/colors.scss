@@ -2,7 +2,13 @@
 
 @each $key, $val in $colors {
   .text-color-#{$key} {
-    color: $val
+    color: $val;
+  }
+
+  .text-hover-#{$key}{
+    &:hover {
+      color: $val;
+    }
   }
 
   .bg-color-#{$key} {
@@ -16,6 +22,12 @@
         color: mix(white, $val, $i * 10%);
       }
 
+      .text-hover-#{$key}-light-#{$i} {
+        &:hover {
+          color: mix(white, $val, $i * 10%);
+        }
+      }
+
       .bg-color-#{$key}-light-#{$i} {
         background-color: mix(white, $val, $i * 10%);
       }
@@ -25,6 +37,12 @@
     @for $i from 1 through 9 {
       .text-color-#{$key}-dark-#{$i} {
         color: mix(black, $val, $i * 10%);
+      }
+
+      .text-hover-#{$key}-dark-#{$i} {
+        &:hover {
+          color: mix(black, $val, $i * 10%);
+        }
       }
 
       .bg-color-#{$key}-dark-#{$i} {

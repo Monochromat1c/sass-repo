@@ -1,44 +1,44 @@
 @use "sass:math";
 
 .header {
-  display: flex;
-  border-bottom: 0.27rem solid #cfcfcf;
-  min-height: 7dvh;
-  width: 100%;
-  // background-color: rgb(250, 247, 247);
-
-  .header-logo {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 1rem;
-  }
-
-  .header-link-wrapper-center {
-    margin: auto;
-    // padding: auto 1rem;
-  }
-
-  .header-link-wrapper-left {
-    padding: 0 3rem;
-    margin: auto auto auto 0;
-  }
-
-  .header-link-wrapper-right {
-    padding: 0 3rem;
-    margin: auto 0 auto auto;
-  }
-
-  .header-link-container {
     display: flex;
-    gap: 1.5rem;
-    // padding-left: 1rem;
-  }
+    border-bottom: 0.27rem solid #cfcfcf;
+    min-height: 7dvh;
+    width: 100%;
+    // background-color: rgb(250, 247, 247);
 
-  a{
-    transition: all .3s ease;
-  }
+    .header-logo {
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 1rem;
+    }       
 
-  a:hover {
-    text-decoration: underline;
-  }
+    .header-link-wrapper-center {
+        margin: auto;
+        // padding: auto 1rem;
+    }
+
+    .header-link-wrapper-left {
+        padding: 0 3rem;
+        margin: auto auto auto 0;
+    }
+
+    .header-link-wrapper-right {
+        padding: 0 3rem;
+        margin: auto 0 auto auto;
+    }
+
+    .header-link-container {
+        display: flex;
+        gap: 1.5rem;
+        // padding-left: 1rem;
+    }
+
+    a {
+        transition: all 0.3s ease;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
 }

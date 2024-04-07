@@ -1,30 +1,30 @@
-@use 'sass:math';
+@use "sass:math";
 
 .card {
-  display: block;
-  padding: $base-padding;
-  border: $base-border-thickness solid #ddd;
-  box-shadow: $base-box-shadow;
-  margin: 1rem;
-  border-radius: $base-border-radius;
-  // background-color: rgb(250, 247, 247);
+    display: block;
+    padding: $base-padding;
+    border: $base-border-thickness solid #ddd;
+    box-shadow: $base-box-shadow;
+    margin: 1rem;
+    border-radius: $base-border-radius;
+    // background-color: rgb(250, 247, 247);
 
-  .card-title {
-    padding-bottom: .5rem;
-  }
-
-  .card-body {
-    // font-size: $base-font-size;
-
-    a {
-      text-decoration: underline;
-      color: #ff6600;
-      transition: all .1s ease;
+    .card-title {
+        padding-bottom: 0.5rem;
     }
 
-    a:hover {
-      font-weight: 600;
-      color: #ff9046;
+    .card-body {
+        // font-size: $base-font-size;
+
+        a {
+            text-decoration: underline;
+            color: #ff6600;
+            transition: all 0.1s ease;
+        }
+
+        a:hover {
+            // font-weight: 600;
+            color: #ff9046;
+        }
     }
-  }
 }
