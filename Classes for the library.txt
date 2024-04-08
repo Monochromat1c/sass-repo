@@ -4,10 +4,12 @@
 .header-link-wrapper-{center/left/right}
 .header-link-container
 
+
 // Cards
 .card
 .card-title (will only work if inside the .card)
 .card-body (will only work if inside the .card)
+
 
 // Colors
 // colors: primary, secondary, error, info, blue, red, yellow, green, orange, purple, gray, black, white
@@ -29,12 +31,17 @@
     
 
 // Buttons
-.btn
-.btn-{colors}
-.btn-outline-{colors}
-.btn-complement-{colors}
+.button
+.button-{colors}
+.button-outline-{colors}
+.button-complement-{colors}
+
 
 // Utilities
+// justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly, initial, inherit
+// align-items:  normal, stretch, center, flex-start, flex-end, start, end, baseline, initial, inherit
+// width: percent-20, percent-30, percent-40, percent-50, percent-60, percent-70, percent-80, percent-90, percent-100, 
+        dvw-20, dvw-30, dvw-40, dvw-50, dvw-60, dvw-70, dvw-80, dvw-90, dvw-100, 
 .padding-{0, 1, 2, 3, 4, 5}
 .padding-left-{0, 1, 2, 3, 4, 5}
 .padding-right-{0, 1, 2, 3, 4, 5}
@@ -50,6 +57,11 @@
 .display-{none, block, flex, inline, inline-block}
 .font-size-{small, large, extra-large, extra-extra-large}
 .text-align-{center, end, justify, left, right, start}
+.justify-{justify-content}
+.align-items-{align-items}
+.min-width-{width}
+.max-width-{width}
+
 
 // Grid
 // breakpoint: extra-small, small, medium, large, extra-large, breakpoint
@@ -58,6 +70,8 @@
 .container
 .row (justify-{layout-value}) 
 .column-{grid-column}-{breakpoint}
+.justify-content-{layout-value}
+
 
 // Navbar
 .navbar

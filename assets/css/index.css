@@ -11,6 +11,10 @@
   flex-flow: row wrap;
 }
 
+.justify-space-between {
+  justify-content: space-between;
+}
+
 @media (min-width: 0) {
   .column-12-extra-small {
     box-sizing: border-box;
@@ -26,11 +30,15 @@
   }
 }
 @media (min-width: 960px) {
-  .column-3-large {
+  .column-6-large {
     box-sizing: border-box;
     flex-grow: 0;
-    width: 25%;
+    width: 50%;
   }
+}
+
+.background-color-primary-light-2 {
+  background-color: #5b8af1;
 }
 
 .background-color-primary-light-3 {
@@ -41,8 +49,20 @@
   background-color: #1ac888;
 }
 
+.text-color-error {
+  color: #d32752;
+}
+
+.text-hover-error:hover {
+  color: #d32752;
+}
+
 .text-hover-yellow:hover {
   color: #e6e619;
+}
+
+.text-color-indigo {
+  color: indigo;
 }
 
 .text-color-white {
@@ -72,6 +92,34 @@
 }
 .header a:hover {
   text-decoration: underline;
+}
+
+.button-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.7rem 3rem;
+  border-radius: 1.65rem;
+  margin: 0.7rem;
+  background-color: #1ac888;
+}
+.button-secondary:hover {
+  background-color: #2ce4a0;
+}
+
+.button-error {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.7rem 3rem;
+  border-radius: 1.65rem;
+  margin: 0.7rem;
+  background-color: #d32752;
+}
+.button-error:hover {
+  background-color: #de4a6f;
 }
 
  .navbar-background-color-primary .container, .navbar-background-color-primary {
@@ -126,6 +174,10 @@
   padding-bottom: 12rem;
 }
 
+.margin-auto {
+  margin: auto;
+}
+
 .margin-top-2 {
   margin-top: 2rem;
 }
@@ -146,6 +198,10 @@
   margin-bottom: 2rem;
 }
 
+.border-radius-large {
+  border-radius: 1.4rem;
+}
+
 .display-flex {
   display: flex;
 }
@@ -160,4 +216,12 @@
 
 .text-align-center {
   text-align: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.max-width-percent-90 {
+  max-width: 90%;
 }

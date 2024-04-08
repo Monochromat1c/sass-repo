@@ -1,37 +1,37 @@
-@mixin btn($bg-color: #e2e2e2) {
+@mixin button($bg-color: #e2e2e2) {
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
     border: 0;
-    padding: 1rem 3rem;
+    padding: .7rem 3rem;
     border-radius: 1.65rem;
     margin: .7rem;
     background-color: $bg-color;
 }
 
-.btn {
-    @include btn();
+.button {
+    @include button();
     border: $base-border-thickness solid black;
 }
 
 @each $key, $val in $colors {
-    .btn-#{$key} {
-        @include btn($val);
+    .button-#{$key} {
+        @include button($val);
         &:hover {
             background-color: lighten($val, 9);
         }
     }
 
-    .btn-outline-#{$key} {
-        @include btn(#fff);
+    .button-outline-#{$key} {
+        @include button(#fff);
         border: $base-border-thickness solid $val;
         &:hover {
             background-color: lighten($val, 5);
         }
     }
 
-    .btn-complement-#{$key} {
-        @include btn($val);
+    .button-complement-#{$key} {
+        @include button($val);
         color: light-comp($val);
         &:hover {
             color: $val;
