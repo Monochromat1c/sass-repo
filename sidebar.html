@@ -187,24 +187,22 @@
         const checkbox = document.getElementById('check');
         const sidebar = document.getElementById('sidebar');
         const content = document.querySelector('.content');
-        const overlay = document.createElement('div'); // Create overlay element
-        overlay.classList.add('overlay'); // Add overlay class
+        const overlay = document.createElement('div');
+        overlay.classList.add('overlay');
 
         checkbox.addEventListener('change', function () {
             if (this.checked) {
                 sidebar.classList.add('show-sidebar');
-                overlay.style.display = 'block'; // Show overlay
-                document.body.style.overflow = 'hidden'; // Disable scrolling on content
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
             } else {
                 sidebar.classList.remove('show-sidebar');
-                overlay.style.display = 'none'; // Hide overlay
-                document.body.style.overflow = ''; // Enable scrolling on content
+                overlay.style.display = 'none';
+                document.body.style.overflow = '';
             }
         });
 
-        document.body.appendChild(overlay); // Append overlay to the body
-
-
+        document.body.appendChild(overlay);
     </script>
 </body>
 
