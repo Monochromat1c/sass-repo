@@ -1,0 +1,64 @@
+.fa-bars {
+    padding: 1.2rem;
+}
+
+.fa-bars:hover {
+    background-color: #e2e2e2;
+    color: black;
+}
+
+.x-container {
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.x {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.x:hover {
+    background-color: #e2e2e2;
+    color: black;
+}
+
+.sidebar {
+    transform: translateX(-100rem);
+    transition: all .3s ease;
+    z-index: 9999;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    overflow-y: auto; 
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    top: 0;
+    position: sticky;
+}
+
+.content {
+    position: relative; 
+    z-index: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 9998; /* Ensure it's below the sidebar */
+    display: none; /* Initially hidden */
+}
+

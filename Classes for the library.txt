@@ -42,16 +42,20 @@
 // align-items:  normal, stretch, center, flex-start, flex-end, start, end, baseline, initial, inherit
 // width: percent-20, percent-30, percent-40, percent-50, percent-60, percent-70, percent-80, percent-90, percent-100, 
         dvw-20, dvw-30, dvw-40, dvw-50, dvw-60, dvw-70, dvw-80, dvw-90, dvw-100, 
-.padding-{0, 1, 2, 3, 4, 5}
-.padding-left-{0, 1, 2, 3, 4, 5}
-.padding-right-{0, 1, 2, 3, 4, 5}
-.padding-top-{0, 1, 2, 3, 4, 5}
-.padding-bottom-{0, 1, 2, 3, 4, 5}
-.margin-{0, 1, 2, 3, 4, 5}
-.margin-left-{0, 1, 2, 3, 4, 5}
-.margin-right-{0, 1, 2, 3, 4, 5}
-.margin-top-{0, 1, 2, 3, 4, 5}
-.margin-bottom-{0, 1, 2, 3, 4, 5}
+// height: percent-20, percent-30, percent-40, percent-50, percent-60, percent-70, percent-80, percent-90, percent-100, 
+        dvh-20, dvh-30, dvh-40, dvh-50, dvh-60, dvh-70, dvh-80, dvh-90, dvh-100, 
+// flex-direction: row, row-reverse, column, column-reverse, initial, inherit
+// float: inline-start, inline-end, left, right, none
+.padding-{0, half, 1, 2, 3, 4, 5}
+.padding-left-{0, half, 1, 2, 3, 4, 5}
+.padding-right-{0, half, 1, 2, 3, 4, 5}
+.padding-top-{0, half, 1, 2, 3, 4, 5}
+.padding-bottom-{0, half, 1, 2, 3, 4, 5}
+.margin-{0, half, 1, 2, 3, 4, 5}
+.margin-left-{0, half, 1, 2, 3, 4, 5}
+.margin-right-{0, half, 1, 2, 3, 4, 5}
+.margin-top-{0, half, 1, 2, 3, 4, 5}
+.margin-bottom-{0, half, 1, 2, 3, 4, 5}
 .opacity-{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
 .border-radius-{default, none, extra-small, small, large, full}
 .display-{none, block, flex, inline, inline-block}
@@ -61,6 +65,10 @@
 .align-items-{align-items}
 .min-width-{width}
 .max-width-{width}
+.min-height-{height}
+.max-height-{height}
+.flex-direction-{flex-direction}
+.float-{float}
 
 
 // Grid

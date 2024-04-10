@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* border: 0.5px dotted green; */
-    /* color: rgb(0, 0, 0); */
+    border: 0.5px dotted green;
+    color: rgb(0, 0, 0);
 }
 
 html {
@@ -67,18 +67,18 @@ h6 {
     font-weight: 500;
 }
 
-body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(span) {
     font-size: clamp(1.4rem, 3vw, 1.6rem);
 }
 
 img {
     max-width: 100%;
-}
+} */
 
 /* wrap all of the content inside the body to a div with a class of "site" */
-.site {
+/* .site {
     min-height: 100dvh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: minmax(0, 1fr);
-}
+} */
