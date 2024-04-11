@@ -3911,6 +3911,26 @@ img {
   padding: 27rem;
 }
 
+.padding-button-1 {
+  padding: 0.5rem 1rem;
+}
+
+.padding-button-2 {
+  padding: 1rem 3rem;
+}
+
+.padding-button-3 {
+  padding: 2rem 5rem;
+}
+
+.padding-button-4 {
+  padding: 3rem 7rem;
+}
+
+.padding-button-5 {
+  padding: 4rem 9rem;
+}
+
 .padding-left-auto {
   padding-left: auto;
 }
