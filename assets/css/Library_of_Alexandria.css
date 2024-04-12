@@ -33,17 +33,17 @@ hr {
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5.6dvw + 1rem, 3.2rem);
+  font-size: clamp(2.5rem, 5.6dvw, 3.2rem);
   font-weight: 900;
 }
 
 h2 {
-  font-size: clamp(1.8rem, 4dvw + 1rem, 2.4rem);
+  font-size: clamp(1.8rem, 4dvw, 2.4rem);
   font-weight: 800;
 }
 
 h3 {
-  font-size: clamp(1.6rem, 3.5dvw + 1rem, 1.872rem);
+  font-size: clamp(1.6rem, 3.5dvw, 1.872rem);
   font-weight: 700;
 }
 
@@ -63,7 +63,7 @@ h6 {
 }
 
 body *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(span) {
-  font-size: clamp(1.4rem, 3vw + 1rem, 1.6rem);
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
 }
 
 *:not(ol):not(ul):not(li) {
@@ -3225,7 +3225,6 @@ img {
 .card {
   display: block;
   padding: 1.5rem;
-  border: 0.1rem solid transparent;
   box-shadow: -1px 1.5px 5px #171c1f;
   margin: 1rem;
   border-radius: 0.7rem;
@@ -3281,7 +3280,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #e2e2e2;
-  border: 0.1rem solid black;
 }
 
 .button-primary {
@@ -3301,7 +3299,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #326dee;
 }
 .button-outline-primary:hover {
   background-color: #4a7ef0;
@@ -3337,7 +3334,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #1ac888;
 }
 .button-outline-secondary:hover {
   background-color: #1ddf97;
@@ -3373,7 +3369,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #d32752;
 }
 .button-outline-error:hover {
   background-color: #da3961;
@@ -3409,7 +3404,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #f6c31c;
 }
 .button-outline-info:hover {
   background-color: #f7c935;
@@ -3445,7 +3439,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #1919e6;
 }
 .button-outline-blue:hover {
   background-color: #3030e9;
@@ -3481,7 +3474,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #e61919;
 }
 .button-outline-red:hover {
   background-color: #e93030;
@@ -3517,7 +3509,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #e6e619;
 }
 .button-outline-yellow:hover {
   background-color: #e9e930;
@@ -3553,7 +3544,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #19e635;
 }
 .button-outline-green:hover {
   background-color: #30e949;
@@ -3589,7 +3579,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #ffa600;
 }
 .button-outline-orange:hover {
   background-color: #ffaf1a;
@@ -3625,7 +3614,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #9900ff;
 }
 .button-outline-purple:hover {
   background-color: #a31aff;
@@ -3661,7 +3649,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid #808080;
 }
 .button-outline-gray:hover {
   background-color: #8d8d8d;
@@ -3697,7 +3684,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid indigo;
 }
 .button-outline-indigo:hover {
   background-color: #5a009c;
@@ -3733,7 +3719,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid black;
 }
 .button-outline-black:hover {
   background-color: #0d0d0d;
@@ -3769,7 +3754,6 @@ img {
   display: inline-block;
   border: 0;
   background-color: #fff;
-  border: 0.1rem solid white;
 }
 .button-outline-white:hover {
   background-color: white;
@@ -3911,8 +3895,12 @@ img {
   padding: 27rem;
 }
 
-.padding-button-1 {
+.padding-button-base {
   padding: 0.5rem 1rem;
+}
+
+.padding-button-1 {
+  padding: 0.5rem 2.5rem;
 }
 
 .padding-button-2 {
@@ -4440,7 +4428,7 @@ img {
 }
 
 .border-radius {
-  border-radius: 0.7rem;
+  border-radius: 1rem;
 }
 
 .border-radius-none {
@@ -4448,19 +4436,27 @@ img {
 }
 
 .border-radius-extra-small {
-  border-radius: 0.175rem;
+  border-radius: 0.3rem;
 }
 
 .border-radius-small {
-  border-radius: 0.35rem;
+  border-radius: 0.5rem;
+}
+
+.border-radius-medium {
+  border-radius: 1.5rem;
 }
 
 .border-radius-large {
-  border-radius: 1.4rem;
+  border-radius: 2rem;
 }
 
 .border-radius-full {
   border-radius: 50%;
+}
+
+.border {
+  border: 0.1rem solid #000000;
 }
 
 .display-none {

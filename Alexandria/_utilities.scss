@@ -18,7 +18,8 @@ $utilities: (
             "8": $base-padding * 14,
             "9": $base-padding * 16,
             "10": $base-padding * 18,
-            "button-1": .5rem 1rem,
+            "button-base": .5rem 1rem,
+            "button-1": .5rem 2.5rem,
             "button-2": 1rem 3rem,
             "button-3": 2rem 5rem,
             "button-4": 3rem 7rem,
@@ -206,12 +207,19 @@ $utilities: (
     "border-radius": (
         "prefix": "border-radius",
         "values": (
-            "default": $base-border-radius,
+            "default": 1rem,
             "none": 0,
-            "extra-small": math.div($base-border-radius, 4),
-            "small": math.div($base-border-radius, 2),
-            "large": $base-border-radius * 2,
+            "extra-small": .3rem,
+            "small": .5rem,
+            "medium": 1.5rem,
+            "large": 2rem,
             "full": 50%
+        ),
+    ),
+    "border": (
+        "prefix": "border",
+        "values": (
+            "default": .1rem solid #000000
         ),
     ),
     "display": (

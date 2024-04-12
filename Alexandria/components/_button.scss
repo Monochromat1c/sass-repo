@@ -8,7 +8,6 @@
 
 .button {
     @include button();
-    border: $base-border-thickness solid black;
 }
 
 @each $key, $val in $colors {
@@ -21,7 +20,6 @@
 
     .button-outline-#{$key} {
         @include button(#fff);
-        border: $base-border-thickness solid $val;
         &:hover {
             background-color: lighten($val, 5);
         }
