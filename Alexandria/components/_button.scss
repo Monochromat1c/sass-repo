@@ -4,33 +4,37 @@
     display: inline-block;
     border: 0;
     background-color: $bg-color;
+    transition: all .3s ease;
 }
 
-.button {
+.kld--button {
     @include button();
 }
 
 @each $key, $val in $colors {
-    .button-#{$key} {
+    .kld--button-#{$key} {
         @include button($val);
         &:hover {
             background-color: lighten($val, 9);
+            transform: scale(1.03);
         }
     }
 
-    .button-outline-#{$key} {
+    .kld--button-outline-#{$key} {
         @include button(#fff);
         &:hover {
             background-color: lighten($val, 5);
+            transform: scale(1.03);
         }
     }
 
-    .button-complement-#{$key} {
+    .kld--button-complement-#{$key} {
         @include button($val);
         color: light-comp($val);
         &:hover {
             color: $val;
             background-color: light-comp($val);
+            transform: scale(1.03);
         }
     }
 }

@@ -1,51 +1,51 @@
 @import 'variables';
 
 @each $key, $val in $colors {
-  .text-color-#{$key} {
+  .kld--text-color-#{$key} {
     color: $val;
   }
 
-  .text-hover-#{$key}{
+  .kld--text-hover-#{$key}{
     &:hover {
       color: $val;
     }
   }
 
-  .background-color-#{$key} {
+  .kld--background-color-#{$key} {
     background-color: $val;
   }
 
   @if ($val != black and $val != white) {
     // light variations
     @for $i from 1 through 9 {
-      .text-color-#{$key}-light-#{$i} {
+      .kld--text-color-#{$key}-light-#{$i} {
         color: mix(white, $val, $i * 10%);
       }
 
-      .text-hover-#{$key}-light-#{$i} {
+      .kld--text-hover-#{$key}-light-#{$i} {
         &:hover {
           color: mix(white, $val, $i * 10%);
         }
       }
 
-      .background-color-#{$key}-light-#{$i} {
+      .kld--background-color-#{$key}-light-#{$i} {
         background-color: mix(white, $val, $i * 10%);
       }
     }
 
     // dark variations
     @for $i from 1 through 9 {
-      .text-color-#{$key}-dark-#{$i} {
+      .kld--text-color-#{$key}-dark-#{$i} {
         color: mix(black, $val, $i * 10%);
       }
 
-      .text-hover-#{$key}-dark-#{$i} {
+      .kld--text-hover-#{$key}-dark-#{$i} {
         &:hover {
           color: mix(black, $val, $i * 10%);
         }
       }
 
-      .background-color-#{$key}-dark-#{$i} {
+      .kld--background-color-#{$key}-dark-#{$i} {
         background-color: mix(black, $val, $i * 10%);
       }
     }

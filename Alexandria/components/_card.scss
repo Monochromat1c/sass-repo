@@ -1,6 +1,6 @@
 // @use "sass:math";
 
-.card {
+.kld--card {
     display: block;
     padding: $base-padding;
     box-shadow: $base-box-shadow;
@@ -8,11 +8,11 @@
     border-radius: $base-border-radius;
     // background-color: rgb(250, 247, 247);
 
-    .card-title {
+    .kld--card-title {
         padding-bottom: 0.5rem;
     }
 
-    .card-body {
+    .kld--card-body {
         // font-size: $base-font-size;
 
         a {

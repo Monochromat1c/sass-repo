@@ -3,7 +3,7 @@
 
 $utilities: (
     "padding": (
-        "prefix": "padding",
+        "prefix": "kld--padding",
         "values": (
             "auto": auto,
             "0": 0,
@@ -27,7 +27,7 @@ $utilities: (
         ),
     ),
     "padding-left": (
-        "prefix": "padding-left",
+        "prefix": "kld--padding-left",
         "values": (
             "auto": auto,
             "0": 0,
@@ -45,7 +45,7 @@ $utilities: (
         ),
     ),
     "padding-right": (
-        "prefix": "padding-right",
+        "prefix": "kld--padding-right",
         "values": (
             "auto": auto,
             "0": 0,
@@ -63,7 +63,7 @@ $utilities: (
         ),
     ),
     "padding-top": (
-        "prefix": "padding-top",
+        "prefix": "kld--padding-top",
         "values": (
             "auto": auto,
             "0": 0,
@@ -82,7 +82,7 @@ $utilities: (
     ),
     "padding-bottom": (
             "auto": auto,
-        "prefix": "padding-bottom",
+        "prefix": "kld--padding-bottom",
         "values": (
             "auto": auto,
             "0": 0,
@@ -100,7 +100,7 @@ $utilities: (
         ),
     ),
     "margin": (
-        "prefix": "margin",
+        "prefix": "kld--margin",
         "values": (
             "auto": auto,
             "0": 0,
@@ -118,7 +118,7 @@ $utilities: (
         ),
     ),
     "margin-left": (
-        "prefix": "margin-left",
+        "prefix": "kld--margin-left",
         "values": (
             "auto": auto,
             "0": 0,
@@ -136,7 +136,7 @@ $utilities: (
         ),
     ),
     "margin-right": (
-        "prefix": "margin-right",
+        "prefix": "kld--margin-right",
         "values": (
             "auto": auto,
             "0": 0,
@@ -154,7 +154,7 @@ $utilities: (
         ),
     ),
     "margin-top": (
-        "prefix": "margin-top",
+        "prefix": "kld--margin-top",
         "values": (
             "auto": auto,
             "0": 0,
@@ -172,7 +172,7 @@ $utilities: (
         ),
     ),
     "margin-bottom": (
-        "prefix": "margin-bottom",
+        "prefix": "kld--margin-bottom",
         "values": (
             "auto": auto,
             "0": 0,
@@ -190,7 +190,7 @@ $utilities: (
         ),
     ),
     "opacity": (
-        "prefix": "opacity",
+        "prefix": "kld--opacity",
         "values": (
             "10": 0.1,
             "20": 0.2,
@@ -205,7 +205,7 @@ $utilities: (
         ),
     ),
     "border-radius": (
-        "prefix": "border-radius",
+        "prefix": "kld--border-radius",
         "values": (
             "default": 1rem,
             "none": 0,
@@ -217,13 +217,13 @@ $utilities: (
         ),
     ),
     "border": (
-        "prefix": "border",
+        "prefix": "kld--border",
         "values": (
             "default": .1rem solid #000000
         ),
     ),
     "display": (
-        "prefix": "display",
+        "prefix": "kld--display",
         "values": (
             "none": none,
             "block": block,
@@ -233,7 +233,7 @@ $utilities: (
         )
     ),
     "font-size": (
-        "prefix": "font-size",
+        "prefix": "kld--font-size",
         "values": (
             "small": $font-size-small,
             "large": $font-size-large,
@@ -242,7 +242,7 @@ $utilities: (
         )
     ),
     "text-align": (
-        "prefix": "text-align",
+        "prefix": "kld--text-align",
         "values": (
             "center": center,
             "end": end,
@@ -253,7 +253,7 @@ $utilities: (
         ),
     ),
     "justify-content": (
-        "prefix": "justify",
+        "prefix": "kld--justify",
         "values": (
             "flex-start": flex-start,
             "flex-end": flex-end,
@@ -266,7 +266,7 @@ $utilities: (
         )
     ),
     "align-items": (
-        "prefix": "align-items",
+        "prefix": "kld--align-items",
         "values": (
             "normal": normal,
             "stretch": stretch,
@@ -281,7 +281,7 @@ $utilities: (
         )
     ),
     "min-width": (
-        "prefix": "min-width",
+        "prefix": "kld--min-width",
         "values": (
             "percent-20": 20%,
             "percent-30": 30%,
@@ -304,7 +304,7 @@ $utilities: (
         )
     ),
     "max-width": (
-        "prefix": "max-width",
+        "prefix": "kld--max-width",
         "values": (
             "percent-20": 20%,
             "percent-30": 30%,
@@ -327,7 +327,7 @@ $utilities: (
         )
     ),
     "min-height": (
-        "prefix": "min-height",
+        "prefix": "kld--min-height",
         "values": (
             "percent-20": 20%,
             "percent-30": 30%,
@@ -350,7 +350,7 @@ $utilities: (
         )
     ),
     "max-height": (
-        "prefix": "max-height",
+        "prefix": "kld--max-height",
         "values": (
             "percent-20": 20%,
             "percent-30": 30%,
@@ -373,7 +373,7 @@ $utilities: (
         )
     ),
     "flex-direction": (
-        "prefix": "flex-direction",
+        "prefix": "kld--flex-direction",
         "values": (
             "row": row,
             "row-reverse": row-reverse,
@@ -384,7 +384,7 @@ $utilities: (
         )
     ),
     "float": (
-        "prefix": "float",
+        "prefix": "kld--float",
         "values": (
             "inline-start": inline-start,
             "inline-end": inline-end,

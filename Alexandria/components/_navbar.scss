@@ -6,23 +6,23 @@
     box-sizing: border-box;
 }
 
-.navbar {
+.kld--navbar {
     @extend %flex-layout;
     padding: $base-padding $base-padding * 2;
     box-shadow: $base-box-shadow;
 
-    .site-title {
+    .kld--site-title {
         font-size: $font-size-large;
     }
 
-    .container {
+    .kld--container {
         @extend %flex-layout;
     }
 }
 
 @each $key, $val in $colors {
-    .navbar-background-color-#{$key} {
-        @extend .navbar;
+    .kld--navbar-background-color-#{$key} {
+        @extend .kld--navbar;
         background-color: $val;
     }
 }

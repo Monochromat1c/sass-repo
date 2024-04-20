@@ -1,29 +1,29 @@
 // Header
-.header
-.header-logo
-.header-link-wrapper-{center/left/right}
-.header-link-container
+.kld--header
+.kld--header-logo
+.kld--header-link-wrapper-{center/left/right}
+.kld--header-link-container
 
 
 // Cards
-.card
-.card-title (will only work if inside the .card)
-.card-body (will only work if inside the .card)
+.kld--card
+.kld--card-title (will only work if inside the .card)
+.kld--card-body (will only work if inside the .card)
 
 
 // Colors
 // colors: primary, secondary, error, info, blue, red, yellow, green, orange, purple, gray, black, white
-.text-color-{colors}
+.kld--text-color-{colors}
     // Light variation for colors
     .text-color-{colors}-light-{1, 2, 3, 4, 5, 6, 7, 8, 9}
     // Dark variation for colors
     .text-color-{colors}-dark-{1, 2, 3, 4, 5, 6, 7, 8, 9}
-.text-hover-{colors}
+.kld--text-hover-{colors}
     // Light variation for colors
     .text-hover-color-{colors}-light-{1, 2, 3, 4, 5, 6, 7, 8, 9}
     // Dark variation for colors
     .text-hover-color-{colors}-dark-{1, 2, 3, 4, 5, 6, 7, 8, 9}
-.background-color-{colors}
+.kld--background-color-{colors}
     // Light variation for colors
     .background-color-{colors}-light-{1, 2, 3, 4, 5, 6, 7, 8, 9}
     // Dark variation for colors
@@ -31,10 +31,10 @@
     
 
 // Buttons
-.button
-.button-{colors}
-.button-outline-{colors}
-.button-complement-{colors}
+.kld--button
+.kld--button-{colors}
+.kld--button-outline-{colors}
+.kld--button-complement-{colors}
 
 
 // Utilities
@@ -46,44 +46,44 @@
         dvh-20, dvh-30, dvh-40, dvh-50, dvh-60, dvh-70, dvh-80, dvh-90, dvh-100, 
 // flex-direction: row, row-reverse, column, column-reverse, initial, inherit
 // float: inline-start, inline-end, left, right, none
-.padding-{0, half, 1, 2, 3, 4, 5, button-base, button-1, button-2, button-3, button-4, button-5}
-.padding-left-{0, half, 1, 2, 3, 4, 5}
-.padding-right-{0, half, 1, 2, 3, 4, 5}
-.padding-top-{0, half, 1, 2, 3, 4, 5}
-.padding-bottom-{0, half, 1, 2, 3, 4, 5}
-.margin-{0, half, 1, 2, 3, 4, 5}
-.margin-left-{0, half, 1, 2, 3, 4, 5}
-.margin-right-{0, half, 1, 2, 3, 4, 5}
-.margin-top-{0, half, 1, 2, 3, 4, 5}
-.margin-bottom-{0, half, 1, 2, 3, 4, 5}
-.opacity-{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
-.border-radius + -{none, extra-small, small, large, full}
-.border
-.display-{none, block, flex, inline, inline-block}
-.font-size-{small, large, extra-large, extra-extra-large}
-.text-align-{center, end, justify, left, right, start}
-.justify-{justify-content}
-.align-items-{align-items}
-.min-width-{width}
-.max-width-{width}
-.min-height-{height}
-.max-height-{height}
-.flex-direction-{flex-direction}
-.float-{float}
+.kld--padding-{0, half, 1, 2, 3, 4, 5, button-base, button-1, button-2, button-3, button-4, button-5}
+.kld--padding-left-{0, half, 1, 2, 3, 4, 5}
+.kld--padding-right-{0, half, 1, 2, 3, 4, 5}
+.kld--padding-top-{0, half, 1, 2, 3, 4, 5}
+.kld--padding-bottom-{0, half, 1, 2, 3, 4, 5}
+.kld--margin-{0, half, 1, 2, 3, 4, 5}
+.kld--margin-left-{0, half, 1, 2, 3, 4, 5}
+.kld--margin-right-{0, half, 1, 2, 3, 4, 5}
+.kld--margin-top-{0, half, 1, 2, 3, 4, 5}
+.kld--margin-bottom-{0, half, 1, 2, 3, 4, 5}
+.kld--opacity-{10, 20, 30, 40, 50, 60, 70, 80, 90, 100}
+.kld--border-radius + -{none, extra-small, small, large, full}
+.kld--border
+.kld--display-{none, block, flex, inline, inline-block}
+.kld--font-size-{small, large, extra-large, extra-extra-large}
+.kld--text-align-{center, end, justify, left, right, start}
+.kld--justify-{justify-content}
+.kld--align-items-{align-items}
+.kld--min-width-{width}
+.kld--max-width-{width}
+.kld--min-height-{height}
+.kld--max-height-{height}
+.kld--flex-direction-{flex-direction}
+.kld--float-{float}
 
 
 // Grid
 // breakpoint: extra-small, small, medium, large, extra-large, breakpoint
 // grid-column: 1 to 12
 // layout-value: flex-start, flex-end, center, space-between, space-around;
-.container
-.row (justify-{layout-value}) 
-.column-{grid-column}-{breakpoint}
-.justify-content-{layout-value}
+.kld--container
+.kld--row (justify-{layout-value}) 
+.kld--column-{grid-column}-{breakpoint}
+.kld--justify-content-{layout-value}
 
 
 // Navbar
-.navbar
-.site-title (will only work if it is inside .navbar)
-.container (will only work if it is inside .navbar)
-.navbar-background-color-{colors}
+.kld--navbar
+.kld--site-title (will only work if it is inside .navbar)
+.kld--container (will only work if it is inside .navbar)
+.kld--navbar-background-color-{colors}
