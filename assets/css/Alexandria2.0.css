@@ -3229,6 +3229,9 @@ img {
   margin: 1rem;
   border-radius: 0.7rem;
 }
+.kld--card:hover {
+  border: 0.1rem solid black;
+}
 .kld--card .kld--card-title {
   padding-bottom: 0.5rem;
 }

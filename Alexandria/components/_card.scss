@@ -6,7 +6,10 @@
     box-shadow: $base-box-shadow;
     margin: 1rem;
     border-radius: $base-border-radius;
-    // background-color: rgb(250, 247, 247);
+    
+    &:hover {
+        border: .1rem solid black;
+    }
 
     .kld--card-title {
         padding-bottom: 0.5rem;
