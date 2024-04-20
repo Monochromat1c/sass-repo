@@ -3974,6 +3974,7 @@ img {
 .kld--table tr {
   text-align: left;
 }
+.kld--table th,
 .kld--table td {
   padding: 1rem;
 }
