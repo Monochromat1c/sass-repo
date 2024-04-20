@@ -1,8 +1,16 @@
+--COMPONENTS--
 // Header
 .kld--header
 .kld--header-logo
 .kld--header-link-wrapper-{center/left/right}
 .kld--header-link-container
+
+
+// Buttons
+.kld--button
+.kld--button-{colors}
+.kld--button-outline-{colors}
+.kld--button-complement-{colors}
 
 
 // Cards
@@ -11,7 +19,23 @@
 .kld--card-body (will only work if inside the .card)
 
 
-// Colors
+// Form
+.kld--form-flex
+
+
+// Table
+.kld--table
+
+
+// Navbar
+.kld--navbar
+.kld--site-title (will only work if it is inside .navbar)
+.kld--container (will only work if it is inside .navbar)
+.kld--navbar-background-color-{colors}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--COLORS--
 // colors: primary, secondary, error, info, blue, red, yellow, green, orange, purple, gray, black, white
 .kld--text-color-{colors}
     // Light variation for colors
@@ -30,14 +54,7 @@
     .background-color-{colors}-dark-{1, 2, 3, 4, 5, 6, 7, 8, 9}
     
 
-// Buttons
-.kld--button
-.kld--button-{colors}
-.kld--button-outline-{colors}
-.kld--button-complement-{colors}
-
-
-// Utilities
+--UTILITIES--
 // justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly, initial, inherit
 // align-items:  normal, stretch, center, flex-start, flex-end, start, end, baseline, initial, inherit
 // width: percent-20, percent-30, percent-40, percent-50, percent-60, percent-70, percent-80, percent-90, percent-100, 
@@ -72,7 +89,7 @@
 .kld--float-{float}
 
 
-// Grid
+--GRID--
 // breakpoint: extra-small, small, medium, large, extra-large, breakpoint
 // grid-column: 1 to 12
 // layout-value: flex-start, flex-end, center, space-between, space-around;
@@ -82,8 +99,3 @@
 .kld--justify-content-{layout-value}
 
 
-// Navbar
-.kld--navbar
-.kld--site-title (will only work if it is inside .navbar)
-.kld--container (will only work if it is inside .navbar)
-.kld--navbar-background-color-{colors}
