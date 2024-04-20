@@ -76,7 +76,7 @@ img {
 }
 
 /* wrap all of the content inside the body to a div with a class of "site" */
-.site {
+.kld--site {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
