@@ -3897,7 +3897,7 @@ img {
   padding: 2rem;
   border-radius: 1rem;
   background-color: #f0f0f0;
-  box-shadow: -1px 2px 9px 2px #c2c1c1;
+  box-shadow: -1px 2px 9px 2px #2b2b2b;
 }
 .kld--form input[type=text],
 .kld--form input[type=password] {
@@ -3931,7 +3931,7 @@ img {
   border-collapse: collapse;
   min-width: 100%;
   border: 2px solid #f2f2f2;
-  box-shadow: -1px 2px 9px 2px #c2c1c1;
+  box-shadow: -1px 2px 9px 2px #2b2b2b;
 }
 .kld--table tr {
   text-align: left;
