@@ -11,6 +11,7 @@
 .kld--button-{colors}
 .kld--button-outline-{colors}
 .kld--button-complement-{colors}
+.kld--button-hover
 
 
 // Cards

@@ -11,12 +11,15 @@
     @include button();
 }
 
+.kld--button-hover {
+    transform: scale(1.03);
+}
+
 @each $key, $val in $colors {
     .kld--button-#{$key} {
         @include button($val);
         &:hover {
             background-color: lighten($val, 9);
-            transform: scale(1.03);
         }
     }
 
@@ -24,7 +27,6 @@
         @include button(#fff);
         &:hover {
             background-color: lighten($val, 5);
-            transform: scale(1.03);
         }
     }
 
@@ -34,7 +36,6 @@
         &:hover {
             color: $val;
             background-color: light-comp($val);
-            transform: scale(1.03);
         }
     }
 }
