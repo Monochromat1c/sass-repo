@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/Alexandria2.0.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="body kld--background-color-secondary-light-2" id="contentContainer">
+        <h1>asdfa</h1>
+        <section class="site">
+            <section class="contentContainer kld--display-flex kld--min-height-dvh-100">
+                <div class="content kld--margin-auto kld--display-flex  kld--flex-direction-column kld--align-items-center kld--justify-center">
+                    <label for="checkbox">
+                        <span
+                            class="not-selectable kld--button-error kld--text-color-white kld--padding-button-2 kld--border-radius-medium kld--margin-bottom-1">Change
+                            background color (This is a checkbox)</span>
+                    </label>
+                    <input style="display: none;" type="checkbox" name="checkbox" id="checkbox">
+                    <input type="button" value="Same function but this is a button" onclick="buttonOnClickFunction()"
+                        class="not-selectable kld--button-error kld--text-color-white kld--padding-button-2 kld--border-radius-medium kld--margin-bottom-1">
+                    <button type="button" onclick="buttonOnClickFunction()"
+                        class="not-selectable kld--button-error kld--text-color-white kld--padding-button-2 kld--border-radius-medium">
+                        <i class="fa-solid fa-bars kld--font-size-large"></i>
+                    </button>
+                </div>
+            </section>
+            <section id="addTextContainer"
+                class="contentContainer kld--display-flex kld--flex-direction-column kld--min-height-dvh-100 kld--background-color-primary-light-5 kld--align-items-center kld--justify-center">
+                <div id="addText" class="content kld--display-flex kld--align-items-center kld--flex-direction-row">
+                    <button type="button" onclick="addParagraph(); counter();" class="kld--margin-right-2 kld--button-info kld--text-black-white kld--padding-button-2 kld--border-radius-medium">
+                        <h1>Add a paragraph</h1>
+                    </button>
+                    <section id="newParagraphContainer"></section>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

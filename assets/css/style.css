@@ -1,0 +1,11 @@
+#addTextContainer, .changeBgColor {
+    background-color: #131316;
+}
+
+.not-selectable {
+    user-select: none;
+}
+
+#newParagraphContainer > * {
+    color: white;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/Alexandria2.0.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contentContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100dvh;
+        }
+
+        .newContent {
+            min-width: 100dvw;
+            min-height: 100dvh;
+            background-color: #c93b40;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 6rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            z-index: 999;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contentContainer">
+        <input type="button" onclick="counter()" value="Click me" class="kld--button-secondary kld--margin-bottom-1 kld--padding-button-2 kld--border-radius-medium kld--text-color-white">
+        <p id="testSection">
+            This button has not been clicked since the beginning of time itself.
+        </p>
+    </div>
+
+
+
+    <script>
+        let a = 0;
+
+        function counter() {
+            a++;
+            if (a === 1) {
+                document.getElementById('testSection').innerHTML = 'This button has been clicked' + ' ' + a + ' ' + 'time.';
+            } else if (a >= 10) {
+                let content = document.createElement('section');
+
+                content.className = 'newContent';
+                content.textContent = 'UH OH! It seems like you have encountered an error while using one of the features of our website! Sit back and relax for a few minutes while we try to fix the error! Have a good day!';
+                testSection.appendChild(content);
+            }
+            else {
+                document.getElementById('testSection').innerHTML = 'This button has been clicked' + ' ' + a + ' ' + 'times.';
+            }
+        };
+    </script>
+</body>
+
+</html>
